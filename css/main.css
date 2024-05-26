@@ -6,7 +6,7 @@ body {
     /* Tamaño de la fuente */
     font-size: 12px;
     /* Fuente de texto */
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -67,7 +67,8 @@ nav .nav-right-section img {
 
 main {
     /* Margen superior */
-    margin-top: 200px;
+    margin-top: 140px;
+    /* margin-top: 200px; */
     background-color: rgb(255, 255, 255);
     /* Centrar elementos */
     text-align: center;
@@ -77,12 +78,12 @@ main .main-logo {
     background-color: rgb(255, 255, 255);
     width: 500px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 main .main-logo img {
     /* Editar tamaño de la imagen*/
-    height: 92px;
+    height: 200px;
 }
 
 /* INPUT SECTION */
@@ -140,9 +141,15 @@ main .main-input .cam-icon {
     margin-right: 10px;
 }
 
+main .main-input input:hover {
+    /* background-color: #2364e600; */
+}
+
 main .main-input-container:hover {
-    box-shadow: 3px 3px 3px 3px #20212447;
-    border-color: #dfe1e500;
+    /* background-color: #165eed00;
+    color: aqua; */
+     box-shadow: 3px 3px 3px 3px #20212447;
+     border-color: #dfe1e500;
 }
 
 /*************************** MAIN BUTTONS SECTION ************************/
@@ -179,48 +186,56 @@ main .main-buttons button:hover {
     /* Borde + oscuro al pasar el mouse */
     border: 1px solid #dadce0;
     /* Sombra */
-    box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);
-    
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .1);
+
 }
 
 
 /*************************** FOOTER ************************/
 
 footer {
-  background-color: #F2F2F2;
-   width: 100%;
-} 
+    background-color: #F8F9FA;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 85px;    
+}
 
 footer section .footer-top-left {
-    margin-top: 100px;
-    /* background-color: rgb(255, 255, 255); */
+    /* background-color: #6394CE; */
     list-style: none;
-    padding: 5px 40px;
+    padding: 10px 0px 10px 40px;
     border-bottom: 1px solid #DADCE0;
 }
 
 footer .footer-section {
     display: flex;
+    /* background-color: #af47b9; */
+    width: 100%;
+    justify-content: space-between;
 }
 
 footer .footer-bottom-left {
-    /* background-color: rgb(255, 255, 255); */
+    /* background-color: rgb(140, 167, 222); */
     width: 500px;
-    padding: 5px 40px;
-    display: flex;
-    justify-content: space-between; 
-
-}
-
- footer .footer-bottom-rigth {
-    /* background-color: rgb(255, 255, 255); */
-    width: 300px;
-    padding: 5px 40px;
+    padding: 0px 0px 10px 40px;
     display: flex;
     justify-content: space-between;
-    margin-left: 580px;
+
 }
 
+footer .footer-bottom-rigth {
+    /* background-color: rgb(175, 175, 65); */
+    width: 300px;
+    padding: 0px 40px 10px 0px;
+    display: flex;
+    justify-content: space-between;    
+}
 
+.footer-bottom-left a {
+    text-decoration: none;
+}
 
-/*  */
+.footer-bottom-rigth a {
+    text-decoration: none;
+}
